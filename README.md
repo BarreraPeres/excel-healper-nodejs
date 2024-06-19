@@ -21,17 +21,14 @@ Criar uma aplicação web para manipular dados do Excel, esta aplicação auxili
 ## Instalação
 
 ### Pré-requisitos
-
+- Node.Js
 - Docker
 - Docker Compose
 
 ### Passos para Instalação
-1. Clone o repositório:
-
+1. Clone o repositório acesse a pasta do projeto e instale as dependências:
    ```sh
-   git clone https://github.com/BarreraPeres/excel-healper-nodejs.git
-   cd excel-healper-nodejs/
-
+   npm install
 2. Construa e inicie os contêineres Docker:
  
     ```sh
