@@ -1,0 +1,28 @@
+#docker run --name db-excel-pg -e POSTGRESQL_USERNAME=docker-excel -e POSTGRESQL_PASSWORD=docker-excel
+#-e POSTGRESQL_DATABASE=db-excel-pg -p 5432:5432 docker.io/bitnami/postgresql:16
+
+version: '3'
+services:
+  db:
+    image: docker.io/bitnami/postgresql:16
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgresql_data:/bitnami/postgresql
+    environment:
+      POSTGRESQL_USERNAME: docker-excel
+      POSTGRESQL_DATABASE: db-excel-pg
+      POSTGRESQL_PASSWORD: docker-excel
+
+  app:
+    build: .
+    ports:
+      - "8080:3333"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgresql://docker-excel:docker-excel@db:5432/db-excel-pg
+volumes:
+  postgresql_data:
+
+

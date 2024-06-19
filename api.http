@@ -1,0 +1,16 @@
+// 3333 dev // 8080 subida no docker 
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+    "name": "Jonh Arthur",
+    "email": "jonharthur@gmail.com"
+}
+
+###
+GET http://localhost:3333/export
+
+###
+GET http://localhost:3333/api/users?query=
+###
+DELETE http://localhost:3333/api/user/23

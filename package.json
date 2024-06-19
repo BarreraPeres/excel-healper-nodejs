@@ -1,0 +1,42 @@
+{
+  "name": "excel-helper-nodejs",
+  "version": "1.0.0",
+  "description": "Criar uma aplicação web para manipular dados do Excel, esta aplicação auxilia na criação, validação, armazenamento e exportação de dados em formato Excel.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch --env-file .env src/server.ts",
+    "build": "tsup src --format esm --out-dir build",
+    "start": "node build/server.mjs",
+    "db:migrate": "prisma migrate deploy",
+    "db:studio": "prisma studio",
+    "test": "vitest run"
+  },
+  "keywords": [],
+  "author": "Barrera",
+  "license": "ISC",
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.2",
+    "@types/supertest": "^6.0.2",
+    "supertest": "^7.0.0",
+    "tsup": "8.1.0",
+    "tsx": "4.15.2",
+    "typescript": "5.4.5",
+    "vitest": "^1.6.0"
+  },
+  "dependencies": {
+    "@fastify/multipart": "8.3.0",
+    "@fastify/swagger": "^8.14.0",
+    "@fastify/swagger-ui": "^4.0.0",
+    "@prisma/client": "5.15.0",
+    "dotenv": "16.4.5",
+    "eslint": "9.4.0",
+    "fastify": "4.27.0",
+    "fastify-type-provider-zod": "1.2.0",
+    "prisma": "5.15.0",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz",
+    "zod": "3.23.8"
+  }
+}
