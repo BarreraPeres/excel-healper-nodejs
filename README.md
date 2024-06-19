@@ -29,8 +29,8 @@ Criar uma aplicação web para manipular dados do Excel, esta aplicação auxili
 1. Clone o repositório:
 
    ```sh
-   git clone https://github.com/BarreraPeres/Back-End-Node.Js.git
-   cd Back-End-Node.Js/
+   git clone https://github.com/BarreraPeres/excel-healper-nodejs.git
+   cd excel-healper-nodejs/
 
 2. Construa e inicie os contêineres Docker:
  
