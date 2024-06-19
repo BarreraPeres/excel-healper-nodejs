@@ -3,19 +3,19 @@
 Criar uma aplicação web para manipular dados do Excel, esta aplicação auxilia na criação, validação, armazenamento e exportação de dados em formato Excel.
 
 ## Requisitos Funcionais
-[x] Deve ser possível enviar dados a uma planilha Excel 
-[x] Deve ser possível armazenar dados válidos em um banco de dados
-[x] Deve ser possível processar e validar os dados.
-[x] Deve ser possivel baixar a planilha Excel validada.
-[x] Deve ser possível inserir novos registros
-[x] Deve ser possível listar registros existentes. 
-[x] Deve ser Possivel deletar registros. 
+- [x] Deve ser possível enviar dados a uma planilha Excel 
+- [x] Deve ser possível armazenar dados válidos em um banco de dados
+- [x] Deve ser possível processar e validar os dados.
+- [x] Deve ser possivel baixar a planilha Excel validada.
+- [x] Deve ser possível inserir novos registros
+- [x] Deve ser possível listar registros existentes. 
+- [x] Deve ser Possivel deletar registros. 
 
 ## Regras De Negocio
 
-[x] Garantir que nomes tenham mínimo 4 caracteres.
-[x] Garantir emails em formato valídos. 
-[x] Garantir que não tenha dados duplicado.
+- [x] Garantir que nomes tenham mínimo 4 caracteres.
+- [x] Garantir emails em formato valídos. 
+- [x] Garantir que não tenha dados duplicado.
 
 
 ## Instalação
